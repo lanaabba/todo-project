@@ -18,7 +18,7 @@ if (gender == 'male' || gender == 'female')
 let age = prompt("enter your age");
 console.log(age);
 if (age <= 0) {
-    alert("no age like this")
+    alert("no age like this");
 }
 
 let skip = confirm("skip the welcome massege?")
@@ -37,23 +37,25 @@ else if (
 else {
     alert("welcome , "+ userName);
 }
- 
-let userSport = prompt ( "do you love sport (Yes / No)?")
 
-let children = prompt ( "do you love children (Yes / No)?")
+let userSport = prompt ( "do you love sport (Yes / No)?");
 
-let softWare = prompt ( "do you love javaScript (Yes / No)?")
-let userAnswers =[userSport , children ,softWare ]
-console.log(userAnswers);
+let children = prompt ( "do you love children (Yes / No)?");
+
+let softWare = prompt ( "do you love javaScript (Yes / No)?");
+  let answers =[userSport , children ,softWare ];
+
 
 function theUserAnswer()
 {
-    for (let i=0; i<userAnswers.length; i++)
-    { console.log(userAnswers[i])} 
-  
+    for (let i=0; i<answers.length; i++){
+    if (answers[i] === ""){
+       answers[i] ="invalid";
+    }
+    { console.log(answers[i]);} 
+}
 }
 theUserAnswer()
-
 
 
 
