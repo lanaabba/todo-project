@@ -22,20 +22,24 @@ if (age <= 0) {
 }
 
 let skip = confirm("skip the welcome massege?")
-console.log(skip)
-
-if (
-    gender == "male" && skip == false
-) {
+if ((skip) ==true){
+prompt ("you skiped the welcome massage" );}
+else{
+if 
+    (gender == "male" )
+ {
     alert("welcome , Mr. "+ userName);
+    console.log(gender);
 }
-else if (
-    gender == "female" && skip == false
-) {
+else if 
+   ( gender == "female" ) {
     alert(`welcome , Ms.  ${userName}`);
+    console.log(gender);
 }
 else {
     alert("welcome , "+ userName);
+    console.log('undefined');
+}
 }
 
 let userSport = prompt ( "do you love sport (Yes / No)?");
